@@ -90,8 +90,7 @@ h3{
 }
 
 #logo{
-    width: 250px;
-   
+    width: 250px;  
 }
 
 
@@ -105,11 +104,14 @@ p {
 
    
 .intro {
-    text-align: center;
+    /* text-align: center; */
+    padding: 5em;
+    color: white;
     vertical-align: middle;
     align-content: center;
-    padding-top: 2em;
-    height: 60vh;
+    scroll-padding: 2em;
+    padding-bottom: 2em;
+    height: 80vh;
     background-color: cadetblue;
     background-size: cover;
     /* background-position: center; */
