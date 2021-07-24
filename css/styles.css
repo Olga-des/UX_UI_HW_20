@@ -1,3 +1,4 @@
+
 body {
     background-color:#F3F2F2;
     font-family: 'Open Sans', sans-serif;
@@ -11,6 +12,61 @@ body {
     border-radius: 15px; */
 }
 
+.row{
+    padding-bottom: 5em;
+}
+
+nav{ 
+    padding: 1%;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.195em;
+    background-color: rgb(243, 242, 242, 0.9);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+.navContainer{
+    display: none;
+}
+.navList{
+    width: 50%;
+    margin-left: auto;
+    margin-right: 50px;
+    float: right;
+    padding: 0 auto;
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+
+ .scroll nav{
+    height: 30px !important;
+}
+
+
+.navbar{
+    background-color:ghostwhite;
+    color: indigo;
+}
+
+.navbar-text{
+    color: khaki !important;
+}
+
+/* .navItem:hover{
+    text-decoration: underline solid #FD636B 10px;
+} */
+.navItem{
+    padding: 0px 10px 0px 10px;
+    float:right;
+}
+
 
 h3{
     color: #FD636B;
@@ -19,6 +75,23 @@ h3{
     line-height: 148.19%;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo{
+    
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#logo{
+    width: 250px;
+   
 }
 
 
@@ -33,22 +106,28 @@ p {
    
 .intro {
     text-align: center;
+    vertical-align: middle;
+    align-content: center;
     padding-top: 2em;
-    height: 50vh;
+    height: 60vh;
     background-color: cadetblue;
     background-size: cover;
     /* background-position: center; */
   }
 
-.intro{
-      height:50vh;
-  }
+.icon-op{
+    width: 100px;
+}
 
 #absolute{
     position: absolute;
 }
 
-.container{
-    padding-top: 2em;
+.stages{
+    text-align: center;
+}
+
+.row{
+    padding-top: 7em;
 }
 

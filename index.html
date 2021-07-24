@@ -22,36 +22,65 @@
 </head>
 <body>
 
+<nav>
+    <div class="inline-block logo">
+        <img id=logo 
+            src="images/logo.png" 
+            alt="logo">
+    </div>
+        <ul class="navList">
+            <li class="inline-block navItem" id="about">about</li>
+            <li class="inline-block navItem" id="work">work</li>
+            <li class="inline-block navItem">contact</li>
+        </ul>
+</nav>
+
   <!-- Scrollspy -->
 
-  <div id="list-scrollspy" class="list-group" style="position: relative;">
-    <a class="list-group-item list-group-item-action" href="#list-item-1">Introduction</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-2">Research</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-3">Problem</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-4">Iterations</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-5">Prototype</a>
+  <nav id="scroll">
+        <div id="list-scrollspy" class="navbar float-right col-9" style="position: sticky;">
+          <span class="navbar-text">
+          <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#list-item-1">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list-item-2">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list-item-3">Definition</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list-item-4">Ideation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list-item-5">Testing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list-item-6">Prototype</a>
+          </li>
+          </ul>
+        </span>
+        </div>      
 
-  </div>
+        <div class="navContainer">
+            <img 
+                src="images/menu.png" 
+                alt="menu">
+        </div>
+        <div id="underline">
 
-    <!-- Jumbotron -->
+        </div>
+</nav>      
 
-    <!-- <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-          <h1 class="display-4">Link2Care App</h1>
-          <p class="lead">Here is a short summary about this website.</p>
-          <div class="d-flex align-items-center">
-          </div>
-      </div> -->
-
-      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
     
-    <!-- 1. Title  -->
+    <!-- Title  -->
 
     <div class="intro" style="background-image: url(/images/Link2Care_jumbotron.png);">
       <div class="container" id="absolute">
-
         <div class="row hero">
-          <div class="col">
+          <div class="col-6">
             <h4>Link2Care App</h4>
             <p>...</p>
           </div>
@@ -63,28 +92,138 @@
       </div> -->
     </div>
     
-    <!-- 2. Intro  -->
+    <!-- 1. Intro  -->
     
-    </div>
-    <div class="container">      
+    <div id="list-item-1" class="container">      
         <div class="row">
           <div class="col-3">
-            <h3 id="list-item-1">Project Overview</h3>
+            <h3>Project Overview</h3>
           </div>
           <div class="col-4">
             <p>The Problem<br>Non-professional caregivers who care for the elderly, disabled or otherwise dependant family member are often isolated and overwhelmed in their roles due to the inherent lack of support structure. These caregivers need more access to tools to help them find support, get advice and share resources.
-              <br>The Solution<br>Design an App that would provide access to dedicated forums, connect with caregivers in similar circumstances, or professional for expert advice. 
+              <br><br>The Solution<br>Design an App that would provide access to dedicated forums, connect with caregivers in similar circumstances, or professional for expert advice. 
               Include features that would help them set self-care goals and a schedule for loved one’s needs that can be shared with hired caregivers or family members to assist in providing seamless care when they are unable to physically be with their loved one. </p>
           </div>
-          <div class="col-5">
-            <p>...</p>
+          <div class="col-3">
+            <img class="img-fluid" style="size: 32em" src="/images/Link2Care_Screen4.png">
           </div>
         </div>
 
-    <div class="container">
-      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <div id="process" class="row content">
+          <div class="col-3">
+            <h3>Design Process</h3>
+          </div>
+          <div class="col-9">
+            <img class="img-fluid" src="/images/L2C_timeline.png">
+          </div>
+        </div>
+     </div>   
+
+    <!-- 2. Research  -->
+    <div id="list-item-2" class="container">  
+        <div id="interviews" class="row content">
+          <div class="col-3">
+            <h3>Research</h3>
+          </div>
+          <div class="col-3 stages">
+            <img class="icon-op" src="/images/Target.png">
+            <h6>Objectives</h6>
+            <p>  
+              The impact this line of work has on care givers<br>
+              Type of support or resources they need<br>
+              Understand if and/or how carers look after their own health<br>
+            </p>
+          </div>
+          <div class="col-3 stages">
+            <img class="icon-op" src="/images/Interview.png">
+            <h6>Interviews</h6>
+            <p>  
+              2 proffessional aged carers<br>
+              2 non-proffessional carers<br>
+            </p>
+          </div>
+          <div class="col-3 stages">
+            <img class="icon-op" src="/images/Survey.png">
+            <h6>Survey</h6>
+            <p>  
+              Received more than 15 responces from professional and non-professional carers
+            </p>
+          </div>
+        </div>
+        <div id="persona" class="row">
+          <div class="col-3">
+            <h3>User Persona</h3>
+          </div>
+          <div class="col-9">
+            <img class="img-fluid" src="/images/CaseStudy_Link2Care_Persona 1.png">
+          </div>
+        </div>
+
+    </div>    
+
+    <!-- 3. Definition Jumbotron -->
+
+    <div id="list-item-3" class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <h1 class="display-4">...</h1>
+          <p class="lead"></p>
+          <div class="d-flex align-items-center">
+          </div>
+      </div>
+    </div> 
+
+    <!-- 4. Ideation -->
+    <div id="list-item-4" class="container">      
+      <div id="interviews" class="row">
+      <div class="col-3">
+        <h3>Wireframe Sketching</h3>
+        <p>
+          In the early stages of design, we focused on developing 'Community Forums' and 'Ask an Expert' features, with reference to self-care and scheduling options.
+        </p>
+    </div>
+      <div class="col-9">
+        <img class="img-fluid" src="images/Sketches.png">
+      </div>
+
+    </div>
+
+    <!-- 5. Testing -->
+    <div id="list-item-5" class="container">      
+      <div class="row">
+        <div class="col-3">
+          <h3>User Testing<br> & Iterations</h3>
+          <p>
+            Our testing phase has revealede a number of issues, leading to multiple rounds of iterations. 
+            Phrasing and terminology made clearer<br>
+            Buttons are now more descriptive, to avoid confusion<br>
+            Functionality changes, such as showing when experts are online and available<br>
+            Introduced a drop down menus for category selections, as well as filtering options for easy discovery<br>
+          </p>
+        </div>
+        <div class="col-9">
+          <img class="img-fluid" src="/images/CaseStudy_Link2Care_Iterations.png">
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- 6. Prototype -->
+    
+    <div class="intro" style="background-image: url(/images/Link2Care_prototype_jumbotron.png);">
+      <div class="container" id="absolute">
+        <div class="row hero">
+          <div class="col-6">
+            <h4>Link2Care App</h4>
+            <p>...</p>
+          </div>
+        </div>      
+
+
+
+    <!-- <div class="container">
+      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example"> -->
       
-        <div class="row">
+        <!-- <div class="row">
           <div class="col">
             <h4 id="list-item-1">Introduction</h4>
           </div>
@@ -94,9 +233,9 @@
           <div class="col-5">
             <p>...</p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col">
             <h3 id="list-item-2">RESEARCH</h3>
           </div>
@@ -122,7 +261,7 @@
 
         <div class="row">
           <div class="col">
-            <h4 id="list-item-4">Iterations</h4>
+            <h3 id="list-item-4">Iterations</h3>
           </div>
           <div class="col-4">
             <p>...</p>
@@ -132,20 +271,20 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <h4 id="list-item-5">Prototype</h4>
+        <div class="row"> -->
+          <!-- <div class="col">
+            <h3 id="list-item-5">Prototype</h3>
           </div>
           <div class="col-4">
             <p>...</p>
           </div>
           <div class="col-5">
             <p>...</p>
-          </div>
+          </div> -->
         </div>
 
       </div>
-    </div>
+  </div>
   
-  </body>
+</body>
 </html>
