@@ -134,3 +134,23 @@ p {
     padding-top: 7em;
 }
 
+.prototype{
+    padding-left: 5em;
+    color: white;
+    vertical-align: top;
+    /* align-content: center; */
+    padding-top: auto; 
+    padding-bottom: auto; 
+    height: 100vh;
+    background-color: cadetblue;
+    background-size: cover;
+    background-position: center;
+  }
+
+  video{
+    border-radius: 35px;
+    overflow: hidden;
+    /* -webkit-transform: translateZ(0); */
+    box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+  }
+
