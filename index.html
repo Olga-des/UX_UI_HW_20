@@ -5,7 +5,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="module">
+    import { Toast } from 'bootstrap.esm.min.js'
   
+    Array.from(document.querySelectorAll('.toast'))
+      .forEach(toastNode => new Toast(toastNode))
+  </script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,15 +87,17 @@
       <div class="container" id="absolute">
         <div class="row hero">
           <div class="col-6">
-            <h4>Link2Care App</h4>
-            <p>...</p>
-          </div>
+            <h4>Link2Care App</h4><br>
+            <p class="lead">Link2Care connects carers with like-minded people in similar positions, to get advice and support, as well as linking them with industry experts for 24/7 access to professional advice. 
+              <p>
+                <br>The Team<br>
+                Kate Hawkin, Mana Asif, Jess Southey, Olga Peshkova
+              </p>
+            </div>
+        </div>
+        </div>
         </div>      
-      
       </div>
-      <!-- <div class="container">
-        <h4 id="list-item-1">Link2Care App</h4>
-      </div> -->
     </div>
     
     <!-- 1. Intro  -->
@@ -100,11 +108,12 @@
             <h3>Project Overview</h3>
           </div>
           <div class="col-4">
-            <p>The Problem<br>Non-professional caregivers who care for the elderly, disabled or otherwise dependant family member are often isolated and overwhelmed in their roles due to the inherent lack of support structure. These caregivers need more access to tools to help them find support, get advice and share resources.
-              <br><br>The Solution<br>Design an App that would provide access to dedicated forums, connect with caregivers in similar circumstances, or professional for expert advice. 
-              Include features that would help them set self-care goals and a schedule for loved one’s needs that can be shared with hired caregivers or family members to assist in providing seamless care when they are unable to physically be with their loved one. </p>
+            <p>
+              <p class="lead">Caregiving is a broad industry with many levels of expertise and requirements. For non-professional carers it can be very demanding and isolating when they don’t have the support they need.</p>
+              Link2Care provides them with the opportunity to form ongoing relationships with people who understand what they’re going through. 
+              It aims to be there for the carer, so that they can feel confident and be the best caregiver possible for their loved ones.            </p>
           </div>
-          <div class="col-3">
+          <div class="col-4">
             <img class="img-fluid" style="size: 32em" src="/images/Link2Care_Screen4.png">
           </div>
         </div>
@@ -138,8 +147,8 @@
             <img class="icon-op" src="/images/Interview.png">
             <h6>Interviews</h6>
             <p>  
-              2 proffessional aged carers<br>
-              2 non-proffessional carers<br>
+              2 x proffessional aged carers<br>
+              2 x non-proffessional carers<br>
             </p>
           </div>
           <div class="col-3 stages">
@@ -149,7 +158,40 @@
               Received more than 15 responces from professional and non-professional carers
             </p>
           </div>
+          <div class="col-3 stages"></div>
+            <div class="col-9">
+            <img class="img-fluid" src="/images/Blue Team_ Link2Care App - Affinity diagram - grouped.png">
+          </div>
+          <div id="findings" class="row content">
+            <div class="col-3">
+              <h3>Key Findings</h3>
+            </div>
+            <div class="col-4">
+              <p> 
+                <strong>1</strong>  
+                Non-professionals carers are largely unpaid and often working full-time or part-time to support themselves and their families.
+              </p>
+              <p>  
+                <strong>2</strong> Family carers have very little to no training as a caregiver and are often thrown into challenging situations that they are not prepared for.              
+              </p>
+              <p>
+                <strong>3</strong> They are often the main point of contact for their loved ones emotional well-being as well as taking care of their basic needs which can be very confronting as a family member. 
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <strong>4</strong> These carers are spending all of their spare time in their caregiving role which makes outside commitments much harder to manage.
+              </p>
+              <p>
+                <strong>5</strong> When in need of support, they often don’t know where to look, unless they personally know someone in a similar situation.
+              </p>
+              <p>
+                <strong>6</strong> Most have said they don’t reach out for help and do not prioritize getting support for themselves, even though they are often overburdened, stressed and overwhelmed. 
+              </p>
+            </div>
+          </div>
         </div>
+        
         <div id="persona" class="row">
           <div class="col-3">
             <h3>User Persona</h3>
@@ -164,9 +206,11 @@
     <!-- 3. Definition Jumbotron -->
 
     <div id="list-item-3" class="jumbotron jumbotron-fluid" style="background-color:#8db9cc;">
-      <div class="container">
-          <h1 class="display-4">...</h1>
-          <p class="lead"></p>
+      <div class="container" style="color: white;">
+          <h6 class="display-4">The Problem</h6>
+          <p class="lead col-6"><br>
+            Non-professional caregivers who care for the elderly, disabled or otherwise dependant family member are often isolated and overwhelmed in their roles due to the inherent lack of support structure. These caregivers need more access to tools to help them find support, get advice and share resources.
+            </p>
           <div class="d-flex align-items-center">
           </div>
       </div>
@@ -176,27 +220,39 @@
     <div id="list-item-4" class="container">   
       <div class="row">
         <div class="col-3">
-          <h3>User Flow</h3>
+          <h3>Feature Prioritisation<br><br></h3>
         </div>
-        <div class="col-4">
-          <p>The Problem<br>Non-professional caregivers who care for the elderly, disabled or otherwise dependant family member are often isolated and overwhelmed in their roles due to the inherent lack of support structure. These caregivers need more access to tools to help them find support, get advice and share resources.
-            <br><br>The Solution<br>Design an App that would provide access to dedicated forums, connect with caregivers in similar circumstances, or professional for expert advice. 
-            Include features that would help them set self-care goals and a schedule for loved one’s needs that can be shared with hired caregivers or family members to assist in providing seamless care when they are unable to physically be with their loved one. </p>
+        <div class="col-12">
+          <img class="img-fluid" src="/images/Blue Team_ Link2Care App - Feature Prioritisation Matrix.jpg">
         </div>
+      </div>
+
+    
+    <div id="list-item-4" class="container">   
+      <div class="row">
         <div class="col-3">
-          <img class="img-fluid" style="size: 32em" src="/images/Link2Care_Screen4.png">
+          <h3>User Flow</h3><br>
+          <p>Our user flow covers 3 main objectives;
+            <br>Onboarding process where the user has the choice of registering with Link2Care, or sign in using their Facebook or Google account
+            <br>Option to send a direct message to an expert 
+            in a specialised field
+            <br>And the ability to browse the community forum, search for specific topics, and finally make a new post if a suitable answer hadn’t been found
+          </p>        
+        </div>
+        <div class="col-9">
+          <img class="img-fluid" src="/images/Contact_userFlow.gif">
         </div>
       </div>
  
       <div id="sketching" class="row">
       <div class="col-3">
-        <h3>Wireframe Sketching</h3>
+        <h3>Wireframe Sketching</h3><br>
         <p>
           In the early stages of design, we focused on developing 'Community Forums' and 'Ask an Expert' features, with reference to self-care and scheduling options.
         </p>
     </div>
       <div class="col-9">
-        <img class="img-fluid" src="images/Sketches.png">
+        <img class="img-fluid align-middle" src="images/Sketches.png">
       </div>
 
     </div>
@@ -205,7 +261,7 @@
     <div id="list-item-5" class="container">      
       <div class="row">
         <div class="col-3">
-          <h3>User Testing<br> & Iterations</h3>
+          <h3>User Testing<br>& Iterations</h3><br>
           <p>
             Our testing phase has revealede a number of issues, leading to multiple rounds of iterations. 
             Phrasing and terminology made clearer<br>
@@ -224,17 +280,29 @@
   
     <!-- 6. Prototype -->
     
-    <div class="intro" style="background-image: url(/images/Link2Care_prototype_jumbotron.png);">
+    <div class="intro align-middle" style="background-image: url(/images/Link2Care_prototype_jumbotron.png);">
       <div class="container" id="absolute">
         <div class="row hero">
           <div class="col-6">
-            <h4>Link2Care App</h4>
-            <p>...</p>
+            <h4>Prototype</h4><br>
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                View Prototype
+              </button>
           </div>
-        </div>      
+      </div>
+
+      <div class="modal fade col-3">
 
       </div>
 
 
+        <!-- Modal -->
+        <div class="modal-dialog modal-dialog-centered">
+          ...        
+        </div>      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+  
 </html>
